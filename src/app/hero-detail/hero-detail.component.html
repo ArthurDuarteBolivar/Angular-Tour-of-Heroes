@@ -1,0 +1,13 @@
+<div class=" text-white d-flex flex-column align-items-center justify-content-center" *ngIf="hero">
+  <main class="d-flex justify-content-center align-items-center flex-column m-4">
+    <arrow-back></arrow-back>
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+</main>
+  <div class="d-flex align-items-center m-4 border p-3">
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" class="input-group-text m-3" [(ngModel)]="hero.name" placeholder="name">
+    <button type="button" class="btn btn-success" (click)="save()">save</button>
+  </div>
+
+</div>

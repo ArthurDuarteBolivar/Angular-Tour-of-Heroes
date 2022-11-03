@@ -1,0 +1,5 @@
+<div class="d-flex flex-column w-100 border p-2" *ngIf="messageService.message.length">
+  <h2 class="text-light">Message</h2>
+  <button  type="button" class="btn btn-danger" (click)="messageService.clear()">Clear</button>
+  <div class="text-white" *ngFor="let item of messageService.message">{{item}}</div>
+</div>

@@ -1,0 +1,24 @@
+.buttons{
+  margin-left: -630px;
+  margin-top: 50px;
+  padding-left: 40px;
+}
+.icon{
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  width: 10vw;
+}
+
+.icon:hover{
+  animation: animations 1s alternate infinite ease-in;
+}
+
+@keyframes animations {
+  from{
+    left: 10px;
+  }
+  to{
+    left: 20px;
+  }
+}
